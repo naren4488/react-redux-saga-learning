@@ -11,11 +11,11 @@ export const cartData = (data = [], action) => {
   switch (action.type) {
     case ADD_TO_CART:
       console.log("add to cart reducer is called ", action);
-      return data;
+      return [action.data, ...data];
     case REMOVE_FROM_CART:
       console.log("remove from cart reducer", action);
-      return data;
+      return action.data;
     default:
-      return "no action called";
+      return [];
   }
 };

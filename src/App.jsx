@@ -1,3 +1,4 @@
+import Header from "./components/Header";
 import { addToCart } from "./redux/action";
 import { useDispatch } from "react-redux";
 
@@ -11,6 +12,7 @@ function App() {
   };
   return (
     <>
+      <Header />
       <button onClick={() => dispatch(addToCart(product))}>Add to cart</button>
     </>
   );
