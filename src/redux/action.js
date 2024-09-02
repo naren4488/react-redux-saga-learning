@@ -1,9 +1,24 @@
-import { ADD_TO_CART } from "./constant";
+import { ADD_TO_CART, EMPTY_CART, REMOVE_FROM_CART } from "./constant";
 
 export const addToCart = (data) => {
-  console.log("action add to cart is called with data: ", data);
+  console.warn("action addToCart", data);
   return {
     type: ADD_TO_CART,
-    data: data,
+    data,
+  };
+};
+
+export const removeToCart = (data) => {
+  console.warn("action removeToCart", data);
+  return {
+    type: REMOVE_FROM_CART,
+    data,
+  };
+};
+
+export const emptyCart = () => {
+  console.warn("action emptyCart");
+  return {
+    type: EMPTY_CART,
   };
 };
