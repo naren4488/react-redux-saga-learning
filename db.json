@@ -5,21 +5,24 @@
       "name": "i phone 16",
       "price": 60000,
       "brand": "apple",
-      "type": "mobile"
+      "color": "blue",
+      "category": "mobile"
     },
     {
       "id": 2,
       "name": "samsung ultra 4",
       "price": 80000,
       "brand": "samsung",
-      "type": "mobile"
+      "color": "black",
+      "category": "mobile"
     },
     {
       "id": 3,
       "name": "nike white tshirt",
       "price": 2000,
       "brand": "nike",
-      "type": "clothes"
+      "color": "red",
+      "category": "clothes"
     }
   ]
 }
